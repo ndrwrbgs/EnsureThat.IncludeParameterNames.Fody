@@ -11,4 +11,4 @@ Ensure.That(input, nameof(input)).IsNotNull();
 Currently supports:
 * Ensure.That(T[, string, OptsFn])
 
-Will complain (but should not error) if your call site is 'complicated' (anything more than passing 3 values to the `That` method)
+Will complain (and not rewrite) (but should not error/fail build) if your call site is 'complicated' (anything more than passing 3 values to the `That` method)
